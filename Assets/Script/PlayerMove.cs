@@ -25,11 +25,37 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        
+        CheckGround();
+    }
+
+    private void FixedUpdate()
+    {
+        MovePlayer();
     }
 
     void OnJump()
     {
-        rb.AddForce(new Vector3(0, jumpforce, 0), ForceMode.Impulse);
+        if (isgrounded)
+        {
+            rb.AddForce(new Vector3(0, jumpforce, 0), ForceMode.Impulse);
+        }
+        
+    }
+
+    void CheckGround()
+    {
+        isgrounded = Physics.CheckSphere(groundchek.position, grounddistance, groundMask);
+    }
+
+    void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
+    }
+
+    void MovePlayer()
+    {
+        Vector3 direction = transform.right * moveInput.x + transform.forward * moveInput.y;
+        direction.Normalize();
+        rb.linearVelocity = new Vector3(direction.x * movespeed, rb.linearVelocity.y, direction.z * movespeed);
     }
 }
