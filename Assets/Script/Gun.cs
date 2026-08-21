@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
     public Transform bulletSpawnPoint;
 
     public GameObject weaponFlash;
+    public GameObject droppedWeapon;
 
     public float recoilDistance = 0.1f;
     public float recoilSpeed = 15f;
@@ -110,5 +111,11 @@ public class Gun : MonoBehaviour
         }
 
         transform.localPosition = initialPosition;
+    }
+
+    public void Drop()
+    {
+        Instantiate(droppedWeapon, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
