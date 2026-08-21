@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerShoothing : MonoBehaviour
 {
     public Gun gun;
+    public Transform gunHolder;
     private bool isHoldingShoot = false;
 
     void OnShoot()
