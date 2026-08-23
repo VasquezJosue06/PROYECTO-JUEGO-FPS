@@ -7,6 +7,12 @@ public class Enemy : MonoBehaviour
 {
     public int health = 100;
 
+    public GameObject bulletPrefab;
+    public Transform bulletSpawnPont;
+    public GameObject weaponFlash;
+    public float bloom;
+    public float fireRate;
+    private float lastShotTime = 0f;
     public Material hitMat;
     private Renderer rend;
     private Material originalMaterial;
@@ -157,7 +163,7 @@ public class Enemy : MonoBehaviour
         idleTimeCounter = idleTime;
         agent.ResetPath();
 
-        //shoot();
+        Shoot();
 
         if(Vector3.Distance(transform.position, playerTransform.position) > attackDistance || !canSeePlayer)
         {
@@ -206,6 +212,28 @@ public class Enemy : MonoBehaviour
         if(canSeePlayer)
         {
             lastKnownPlayerPosition = playerTransform.position;
+        }
+    }
+
+    private void Shoot()
+    {
+        if(Time.time > lastShotTime + fireRate)
+        {
+            Vector3 directionToPlayer = playerTransform.position - transform.position;
+            directionToPlayer.Normalize();
+
+            Quaternion bulletRotation = Quaternion.LookRotation(directionToPlayer);
+
+            float maxInaccuracy = 10f;
+            float currentInaccuracy = bloom + maxInaccuracy;
+            float randomJaw = Random.Range(-currentInaccuracy, currentInaccuracy);
+            float randomPitch = Random.Range(-currentInaccuracy, currentInaccuracy);
+
+            bulletRotation *= Quaternion.Euler(randomPitch, randomJaw + 90, 0f);
+
+            Instantiate(bulletPrefab, bulletSpawnPont.position, bulletRotation);
+            Instantiate(weaponFlash, bulletSpawnPont.position, bulletSpawnPont.rotation);
+            lastShotTime = Time.time;
         }
     }
 
