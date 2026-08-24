@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     public float fireRate;
     private float lastShotTime = 0f;
     public Material hitMat;
+
+    public AudioClip shootingSFX;
     private Renderer rend;
     private Material originalMaterial;
 
@@ -71,11 +73,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        if(!this.enabled) return;
-        
-        rb.freezeRotation = false;
-        transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, transform.rotation.z + 5f);
-        this.enabled = false;
+        Destroy(gameObject);
     }
 
     IEnumerator Blink()
@@ -230,6 +228,8 @@ public class Enemy : MonoBehaviour
             float randomPitch = Random.Range(-currentInaccuracy, currentInaccuracy);
 
             bulletRotation *= Quaternion.Euler(randomPitch, randomJaw + 90, 0f);
+
+            AudioManager.Instance.PlaySFX(shootingSFX, 0.5f);
 
             Instantiate(bulletPrefab, bulletSpawnPont.position, bulletRotation);
             Instantiate(weaponFlash, bulletSpawnPont.position, bulletSpawnPont.rotation);
