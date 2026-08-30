@@ -5,7 +5,10 @@ using System.Linq;
 
 public class Enemy : MonoBehaviour
 {
+<<<<<<< HEAD
     [Header("Combate")]
+=======
+>>>>>>> Develop
     public int health = 100;
 
     public GameObject bulletPrefab;
@@ -20,8 +23,12 @@ public class Enemy : MonoBehaviour
     private Renderer rend;
     private Material originalMaterial;
 
+<<<<<<< HEAD
     [Header("IA")]
     // Configuración del patrullaje, visión y comportamiento de combate.
+=======
+    //AI Setings
+>>>>>>> Develop
     public int currentPointIndex = 0;
     public Vector3 currentTarget;
     public float positionThreshold;
@@ -38,7 +45,10 @@ public class Enemy : MonoBehaviour
 
     private NavMeshAgent agent;
 
+<<<<<<< HEAD
     // Estados posibles de la máquina de comportamiento del enemigo.
+=======
+>>>>>>> Develop
     public enum State { Idle, Patrolling, Chasing, Attacking }
     public State state = State.Idle;
 
@@ -51,7 +61,11 @@ public class Enemy : MonoBehaviour
         originalMaterial = rend.material;
 
         agent = GetComponent<NavMeshAgent>();
+<<<<<<< HEAD
         playerTransform = GameObject.FindWithTag("Player").transform;
+=======
+        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+>>>>>>> Develop
 
         GameObject patrolPointParent = GameObject.FindWithTag("PatrolPoint");
         patrolPoints = patrolPointParent.GetComponentsInChildren<Transform>().Where(t => t != patrolPointParent.transform).ToArray();
@@ -59,7 +73,11 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+<<<<<<< HEAD
         if (collision.gameObject.CompareTag("Damage"))
+=======
+        if(collision.gameObject.tag == "Damage")
+>>>>>>> Develop
         {
             health -= 10;
             if(health <= 0)
@@ -76,13 +94,19 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+<<<<<<< HEAD
         // El enemigo desaparece tras agotar su salud.
+=======
+>>>>>>> Develop
         Destroy(gameObject);
     }
 
     IEnumerator Blink()
     {
+<<<<<<< HEAD
         // Feedback visual breve para confirmar que recibió un impacto.
+=======
+>>>>>>> Develop
         rend.material = hitMat;
         yield return new WaitForSeconds(0.1f);
         rend.material = originalMaterial;
@@ -90,7 +114,10 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+<<<<<<< HEAD
         // Primero actualiza información sensorial y luego ejecuta el estado actual.
+=======
+>>>>>>> Develop
         LookForPlayer();
 
         switch (state)
@@ -109,7 +136,10 @@ public class Enemy : MonoBehaviour
                 break;
         }
 
+<<<<<<< HEAD
         // Evita que una colisión física desplace al agente controlado por NavMesh.
+=======
+>>>>>>> Develop
         rb.linearVelocity = Vector3.zero;
 
         LookAtPlayer();
@@ -118,14 +148,21 @@ public class Enemy : MonoBehaviour
 
     private void LookForPlayer()
     {
+<<<<<<< HEAD
         // El raycast comprueba si hay línea directa de visión hasta el jugador.
+=======
+>>>>>>> Develop
         Vector3 directionToPlayer = playerTransform.position - transform.position;
 
         if(Physics.Raycast(transform.position, directionToPlayer, out RaycastHit hit, maxViciondistance))
         {
             canSeePlayer = hit.transform == playerTransform;
 
+<<<<<<< HEAD
             if (canSeePlayer && state != State.Attacking)
+=======
+            if(canSeePlayer && state != State.Attacking)
+>>>>>>> Develop
             {
                 state = State.Chasing;
             }
@@ -134,7 +171,10 @@ public class Enemy : MonoBehaviour
 
     private void Idle()
     {
+<<<<<<< HEAD
         // Espera antes de iniciar otro recorrido de patrulla.
+=======
+>>>>>>> Develop
         agent.ResetPath();
 
         idleTimeCounter -= Time.deltaTime;
@@ -167,7 +207,10 @@ public class Enemy : MonoBehaviour
     }
     private void Attacking()
     {
+<<<<<<< HEAD
         // Al atacar se detiene y dispara mientras conserve visión del jugador.
+=======
+>>>>>>> Develop
         idleTimeCounter = idleTime;
         agent.ResetPath();
 
@@ -187,7 +230,10 @@ public class Enemy : MonoBehaviour
     }
     private void Chasing()
     {
+<<<<<<< HEAD
         // Persigue la última posición vista, incluso si el jugador sale de la vista directa.
+=======
+>>>>>>> Develop
         idleTimeCounter = idleTime;
         agent.SetDestination(lastKnownPlayerPosition);
 
@@ -226,7 +272,10 @@ public class Enemy : MonoBehaviour
 
     private void Shoot()
     {
+<<<<<<< HEAD
         // La cadencia limita la frecuencia de disparo independientemente de Update.
+=======
+>>>>>>> Develop
         if(Time.time > lastShotTime + fireRate)
         {
             Vector3 directionToPlayer = playerTransform.position - transform.position;
