@@ -5,17 +5,6 @@ using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
-<<<<<<< HEAD
-    // Instancia compartida para que los demás sistemas actualicen la interfaz.
-    public static UiManager Instance;
-
-    [Header("Feedback visual")]
-    public GameObject hitUi;
-    public GameObject deathUi;
-
-    [Header("Estado del jugador")]
-    public TextMeshProUGUI ammoText;
-=======
     public static UiManager Instance;
 
     public GameObject hitUi;
@@ -24,37 +13,23 @@ public class UiManager : MonoBehaviour
 
     public TextMeshProUGUI ammoText;
 
->>>>>>> Develop
     public Image healthBar;
     public Gradient healthGradiant;
 
     private void Awake()
     {
-<<<<<<< HEAD
-        // Cada carga de escena comienza con el juego activo.
-        Time.timeScale = 1.0f;
-=======
         Time.timeScale = 1.0f;
 
->>>>>>> Develop
         Instance = this;
     }
 
     public void InstatiateHitUi()
     {
-<<<<<<< HEAD
-        // Crea un indicador breve cuando el jugador recibe daño.
-=======
->>>>>>> Develop
         Instantiate(hitUi, transform);
     }
 
     public void Restart()
     {
-<<<<<<< HEAD
-        // Reinicia la escena que está actualmente activa.
-=======
->>>>>>> Develop
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -66,16 +41,9 @@ public class UiManager : MonoBehaviour
 
     public void SetHealthValue(int health)
     {
-<<<<<<< HEAD
-        // Mantiene el valor de la interfaz dentro del rango válido de 0 a 100.
-        float floatHealth = Mathf.Clamp01((float)health / 100);
-        healthBar.color = healthGradiant.Evaluate(floatHealth);
-        healthBar.fillAmount = floatHealth;
-=======
         float floatHealth = (float)health / 100;
         healthBar.color = healthGradiant.Evaluate(floatHealth);
         healthBar.fillAmount = floatHealth;
 
->>>>>>> Develop
     }
 }
