@@ -1,5 +1,5 @@
 using Unity.Mathematics;
-using UnityEditor;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -71,13 +71,21 @@ public class PickUp : MonoBehaviour
     {
         if(!isLookedAt) return;
 
+        Gun prefab = weaponPrefab != null ? weaponPrefab.GetComponent<Gun>() : null;
+        if (player == null || !player.CanPickUpWeapon(prefab)) return;
+
         player.OnDrop();
+        if (player.gun != null) return;
 
         GameObject newWeapon = Instantiate(weaponPrefab, player.gunHolder);
         newWeapon.transform.localPosition = Vector3.zero;
         newWeapon.transform.localRotation = Quaternion.identity;
 
-        player.gun = newWeapon.GetComponent<Gun>();
+        if (!player.EquipPickedUpWeapon(newWeapon.GetComponent<Gun>(), prefab))
+        {
+            Destroy(newWeapon);
+            return;
+        }
 
         Destroy(gameObject);
 

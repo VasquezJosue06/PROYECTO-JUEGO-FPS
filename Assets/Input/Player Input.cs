@@ -171,6 +171,36 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""Change_K"",
+                    ""type"": ""Button"",
+                    ""id"": ""28d81c5b-126a-4633-aa4d-c916a679ca92"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
+                },
+                {
+                    ""name"": ""change_M"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""fa9addca-df31-40bb-abc0-ab5da3e09426"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
+                },
+                {
+                    ""name"": ""Change_Q"",
+                    ""type"": ""Button"",
+                    ""id"": ""ccf32ac6-e8b6-4064-a993-891bf107fea4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -305,6 +335,61 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Drop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba1d616b-b5d2-4755-8489-7c3a78e4892b"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Change_K"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cb3a8b0a-82f5-47ba-b137-d637bae46a9f"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Change_K"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""09ddbd28-54cb-442c-8dad-fca2113a8b25"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Change_K"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""67617e78-5eef-43f7-9a3f-96f990f6761c"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""change_M"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""84bf5287-3bca-48c0-87ca-3b6fb6f375b0"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Change_Q"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -321,6 +406,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_OnFoot_Reload = m_OnFoot.FindAction("Reload", throwIfNotFound: true);
         m_OnFoot_PickUp = m_OnFoot.FindAction("PickUp", throwIfNotFound: true);
         m_OnFoot_Drop = m_OnFoot.FindAction("Drop", throwIfNotFound: true);
+        m_OnFoot_Change_K = m_OnFoot.FindAction("Change_K", throwIfNotFound: true);
+        m_OnFoot_change_M = m_OnFoot.FindAction("change_M", throwIfNotFound: true);
+        m_OnFoot_Change_Q = m_OnFoot.FindAction("Change_Q", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -409,6 +497,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_OnFoot_Reload;
     private readonly InputAction m_OnFoot_PickUp;
     private readonly InputAction m_OnFoot_Drop;
+    private readonly InputAction m_OnFoot_Change_K;
+    private readonly InputAction m_OnFoot_change_M;
+    private readonly InputAction m_OnFoot_Change_Q;
     /// <summary>
     /// Provides access to input actions defined in input action map "OnFoot".
     /// </summary>
@@ -452,6 +543,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "OnFoot/Drop".
         /// </summary>
         public InputAction @Drop => m_Wrapper.m_OnFoot_Drop;
+        /// <summary>
+        /// Provides access to the underlying input action "OnFoot/Change_K".
+        /// </summary>
+        public InputAction @Change_K => m_Wrapper.m_OnFoot_Change_K;
+        /// <summary>
+        /// Provides access to the underlying input action "OnFoot/change_M".
+        /// </summary>
+        public InputAction @change_M => m_Wrapper.m_OnFoot_change_M;
+        /// <summary>
+        /// Provides access to the underlying input action "OnFoot/Change_Q".
+        /// </summary>
+        public InputAction @Change_Q => m_Wrapper.m_OnFoot_Change_Q;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -502,6 +605,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Drop.started += instance.OnDrop;
             @Drop.performed += instance.OnDrop;
             @Drop.canceled += instance.OnDrop;
+            @Change_K.started += instance.OnChange_K;
+            @Change_K.performed += instance.OnChange_K;
+            @Change_K.canceled += instance.OnChange_K;
+            @change_M.started += instance.OnChange_M;
+            @change_M.performed += instance.OnChange_M;
+            @change_M.canceled += instance.OnChange_M;
+            @Change_Q.started += instance.OnChange_Q;
+            @Change_Q.performed += instance.OnChange_Q;
+            @Change_Q.canceled += instance.OnChange_Q;
         }
 
         /// <summary>
@@ -537,6 +649,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Drop.started -= instance.OnDrop;
             @Drop.performed -= instance.OnDrop;
             @Drop.canceled -= instance.OnDrop;
+            @Change_K.started -= instance.OnChange_K;
+            @Change_K.performed -= instance.OnChange_K;
+            @Change_K.canceled -= instance.OnChange_K;
+            @change_M.started -= instance.OnChange_M;
+            @change_M.performed -= instance.OnChange_M;
+            @change_M.canceled -= instance.OnChange_M;
+            @Change_Q.started -= instance.OnChange_Q;
+            @Change_Q.performed -= instance.OnChange_Q;
+            @Change_Q.canceled -= instance.OnChange_Q;
         }
 
         /// <summary>
@@ -633,5 +754,26 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnDrop(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Change_K" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnChange_K(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "change_M" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnChange_M(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Change_Q" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnChange_Q(InputAction.CallbackContext context);
     }
 }

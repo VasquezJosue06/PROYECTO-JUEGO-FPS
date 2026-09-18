@@ -39,9 +39,9 @@ public class UiManager : MonoBehaviour
         deathUi.SetActive(true);
     }
 
-    public void SetHealthValue(int health)
+    public void SetHealthValue(int health, int maxHealth = 100)
     {
-        float floatHealth = (float)health / 100;
+        float floatHealth = Mathf.Clamp01((float)health / Mathf.Max(1, maxHealth));
         healthBar.color = healthGradiant.Evaluate(floatHealth);
         healthBar.fillAmount = floatHealth;
 

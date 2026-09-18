@@ -3,6 +3,14 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 100;
+    public int MaxHealth { get; private set; } = 100;
+
+    public void ApplyMaxHealth(int value)
+    {
+        MaxHealth = Mathf.Max(1, value);
+        health = MaxHealth;
+        if (UiManager.Instance != null) UiManager.Instance.SetHealthValue(health, MaxHealth);
+    }
 
     public AudioClip hitSFX;
 
@@ -20,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerLoock.Instance.AddShake(0.1f, 0.25f);
         UiManager.Instance.InstatiateHitUi();
         AudioManager.Instance.PlaySFX(hitSFX);
-        UiManager.Instance.SetHealthValue(health);
+        UiManager.Instance.SetHealthValue(health, MaxHealth);
 
         if(health <= 0)
         {
