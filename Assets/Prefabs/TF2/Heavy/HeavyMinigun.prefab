@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1223434061375923426
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      propertyPath: m_Name
+      value: HeavyMinigun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8140761999476428653}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1941985452372136096}
+  m_SourcePrefab: {fileID: 100100000, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+--- !u!1 &2034478154099317171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+  m_PrefabInstance: {fileID: 1223434061375923426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8140761999476428653
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034478154099317171}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48105f9c4e0b78044992f11a5399493e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1941985452372136096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034478154099317171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec495975d73f2f45a6330c39ef188e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reloadTime: 1
+  fireRate: 0.1
+  maxSize: 200
+  shootingSFX: {fileID: 8300000, guid: d3756f2ffe3ac9346b32f9373cbb1624, type: 3}
+  bullet: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
+  bulletSpawnPoint: {fileID: 8005876898484331464}
+  weaponFlash: {fileID: 6625499321394082527, guid: 6278704f099a434c8ee912a65e2bde8a, type: 3}
+  droppedWeapon: {fileID: 0}
+  recoilDistance: 0
+  recoilSpeed: 15
+  animatedShotgun: 0
+  animatedMagazine: 0
+  animatedMinigun: 1
+  spunMoveMultiplier: 0.47826087
+  reserveSize: -1
+  hitscan: 1
+  distanceDamageFalloff: 1
+  fireAnimationDuration: 0
+  pelletDamage: 9
+  hitscanRange: 100
+  visibleTracers: 1
+  tracerPrefab: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
+  tracerWidth: 0.04
+  tracerLifetime: 0.075
+  minigunBarrel: {fileID: 0}
+  barrelLocalAxis: {x: 1, y: 0, z: 0}
+  barrelDegreesPerSecond: 1440
+  barrelSpinUpTime: 0.87
+  barrelSpinDownTime: 0.6
+  weaponAnimator: {fileID: 8140761999476428653}
+  pelletsPerShot: 4
+  spreadDegrees: 3.5
+  equippedPosition: {x: 0, y: 0, z: 0}
+  equippedEulerAngles: {x: 0, y: 90, z: 0}
+  separateViewmodelCamera: 1
+  viewmodelFieldOfView: 50
+--- !u!4 &8005876898484331464 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9214387191625991978, guid: ac63dbbe2b4fec84eaa10585dde80b87, type: 3}
+  m_PrefabInstance: {fileID: 1223434061375923426}
+  m_PrefabAsset: {fileID: 0}

@@ -27,11 +27,12 @@ public class PlayerClass : MonoBehaviour
 
     private void Update()
     {
-        // Apply Inspector changes on the main thread, never inside OnValidate.
+        // Aplica los cambios del Inspector durante el juego.
         if (selectedClass != CurrentClass && !SetClass(selectedClass))
             selectedClass = CurrentClass;
     }
 
+    // Un solo punto para cambiar vida, movimiento y armas de la clase.
     public bool SetClass(Classes newClass)
     {
         if (newClass == null || !isActiveAndEnabled || health == null || health.health <= 0)

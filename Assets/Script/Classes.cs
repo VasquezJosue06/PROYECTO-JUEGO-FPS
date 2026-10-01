@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Shared class configuration. Current health and ammunition stay on the player.
+// Define las estadisticas y armas de una clase. La vida y municion actuales pertenecen al jugador.
 [CreateAssetMenu(fileName = "NewClass", menuName = "FPS/Classes")]
 public class Classes : ScriptableObject
 {

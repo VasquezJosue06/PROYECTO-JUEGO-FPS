@@ -58,17 +58,16 @@ public class Enemy : MonoBehaviour
     {
         if(collision.gameObject.tag == "Damage")
         {
-            health -= 10;
-            if(health <= 0)
-            {
-                Die();
-            }
-
-            else
-            {
-                StartCoroutine(Blink());
-            }
+            TakeDamage(10);
         }
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (health <= 0 || amount <= 0) return;
+        health -= amount;
+        if (health <= 0) Die();
+        else if (rend != null && hitMat != null) StartCoroutine(Blink());
     }
 
     void Die()

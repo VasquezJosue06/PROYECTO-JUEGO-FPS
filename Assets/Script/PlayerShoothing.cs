@@ -3,12 +3,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerShoothing : MonoBehaviour
 {
-    // Applied by PlayerClass; never edits the shared class asset.
+    // PlayerClass aplica la clase; este script no modifica su asset.
     private Classes currentClass;
     [Header("Arma equipada")]
     public Gun gun;
     public Transform gunHolder;
-    // Keep old scene data as a fallback for players without a configured class.
+    // Compatibilidad con escenas que aun no tienen una clase asignada.
     [SerializeField, HideInInspector] private Gun startingWeapon;
     [SerializeField, HideInInspector] private Gun secondaryWeapon;
     private bool started;
@@ -22,6 +22,7 @@ public class PlayerShoothing : MonoBehaviour
     private InputAction keyboardChange;
     private InputAction mouseChange;
     private InputAction previousChange;
+    private InputAction spinAction;
 
     private void Awake()
     {
@@ -31,7 +32,7 @@ public class PlayerShoothing : MonoBehaviour
     void Start()
     {
         started = true;
-        // A configured PlayerClass owns initialization, regardless of Start order.
+        // Si hay una clase, PlayerClass se encarga de equipar las armas.
         PlayerClass controller = GetComponent<PlayerClass>();
         if (controller != null && controller.isActiveAndEnabled && controller.SelectedClass != null)
         {
@@ -57,12 +58,15 @@ public class PlayerShoothing : MonoBehaviour
         if (previousChange != null) previousChange.performed += ChangeToPrevious;
         if (keyboardChange != null) keyboardChange.performed += ChangeByKeyboard;
         if (mouseChange != null) mouseChange.performed += ChangeByMouse;
+        spinAction = new InputAction("MinigunSpin", InputActionType.Button, "<Mouse>/rightButton");
+        spinAction.AddBinding("<Gamepad>/leftTrigger");
+        spinAction.Enable();
     }
 
     public void ApplyClass(Classes configuration)
     {
         isHoldingShoot = false;
-        // Disable immediately to cancel reloads and detach the outgoing weapon camera.
+        // Guarda el arma anterior y cancela su recarga antes de cambiar de clase.
         if (gun != null && gun != weapons[0] && gun != weapons[1])
         {
             gun.gameObject.SetActive(false);
@@ -90,6 +94,8 @@ public class PlayerShoothing : MonoBehaviour
 
     private void UnbindSwitchInputs()
     {
+        spinAction?.Dispose();
+        spinAction = null;
         if (previousChange != null) previousChange.performed -= ChangeToPrevious;
         if (keyboardChange != null) keyboardChange.performed -= ChangeByKeyboard;
         if (mouseChange != null) mouseChange.performed -= ChangeByMouse;
@@ -97,12 +103,13 @@ public class PlayerShoothing : MonoBehaviour
 
     private void OnEnable()
     {
-        // PlayerInput is ready in Start on the first activation.
+        // La primera vez se enlazan los controles en Start.
         if (started) BindSwitchInputs();
     }
 
     private void OnDisable()
     {
+        if (gun != null) gun.UpdateMinigunInput(false, false);
         UnbindSwitchInputs();
         isHoldingShoot = false;
     }
@@ -142,6 +149,7 @@ public class PlayerShoothing : MonoBehaviour
     public void SelectWeapon(int slot)
     {
         if (!CanUseWeapons) return;
+        if (gun != null && !gun.CanSwitch) return;
         if (slot < 0 || slot >= weapons.Length || !HasWeapon(slot)) return;
         if (gun != null && gun == weapons[slot]) return;
         if (weapons[slot] == null)
@@ -151,7 +159,7 @@ public class PlayerShoothing : MonoBehaviour
             Gun prefab = slot == 0 ? startingWeapon : secondaryWeapon;
             weapons[slot] = Instantiate(prefab, gunHolder);
         }
-        // Disable first: removes the outgoing overlay camera and cancels unfinished reloads.
+        // Guardar el arma limpia su camara, efectos y recarga pendiente.
         if (gun != null)
         {
             previousSlot = activeSlot;
@@ -173,23 +181,27 @@ public class PlayerShoothing : MonoBehaviour
     void OnReload()
     {
         if (!CanUseWeapons) return;
+        if (gun != null && !gun.CanSwitch) return;
         if (gun != null) gun.TryReload();
     }
 
     void Update()
     {
-        // Pausing time does not stop Update or input callbacks on the death screen.
+        // Al morir se ignoran los controles aunque Update siga ejecutandose.
         if (!CanUseWeapons)
         {
             isHoldingShoot = false;
+            if (gun != null) gun.UpdateMinigunInput(false, false);
             return;
         }
+        if (gun != null) gun.UpdateMinigunInput(isHoldingShoot, spinAction != null && spinAction.IsPressed());
         if (isHoldingShoot && gun != null) gun.Shoot();
     }
 
     public void OnDrop()
     {
         if (!CanUseWeapons) return;
+        if (gun != null && !gun.CanSwitch) return;
         if (gun == null || !gun.Drop()) return;
         weapons[activeSlot] = null;
         if (activeSlot == 0) startingWeapon = null;

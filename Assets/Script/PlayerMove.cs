@@ -23,6 +23,7 @@ public class PlayerMove : MonoBehaviour
     private int usedAirJumps;
     private bool jumpRequested;
     private PlayerHealth playerHealth;
+    private PlayerShoothing shooting;
 
     public void ApplyClass(Classes configuration)
     {
@@ -40,6 +41,7 @@ public class PlayerMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerHealth = GetComponent<PlayerHealth>();
+        shooting = GetComponent<PlayerShoothing>();
     }
 
     void Start()
@@ -75,6 +77,7 @@ public class PlayerMove : MonoBehaviour
 
     private void TryJump()
     {
+        if (shooting != null && shooting.gun != null && shooting.gun.IsSpinning) return;
         if (!isgrounded && usedAirJumps >= airJumps) return;
         float speed = isgrounded ? jumpforce : airJumpSpeed;
         if (!isgrounded) usedAirJumps++;
@@ -109,7 +112,8 @@ public class PlayerMove : MonoBehaviour
             if (backwards < -backwardSpeedMultiplier)
                 direction += transform.forward * (-backwardSpeedMultiplier - backwards);
         }
-        rb.linearVelocity = new Vector3(direction.x * movespeed, rb.linearVelocity.y, direction.z * movespeed);
+        float weaponSpeed = shooting != null && shooting.gun != null ? shooting.gun.MovementMultiplier : 1f;
+        rb.linearVelocity = new Vector3(direction.x * movespeed * weaponSpeed, rb.linearVelocity.y, direction.z * movespeed * weaponSpeed);
     }
 
     IEnumerator PlayFootStep()

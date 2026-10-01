@@ -108,12 +108,21 @@ MonoBehaviour:
   shootingSFX: {fileID: 8300000, guid: 0b78c9ea2f1466b44a1dbad85c0e822e, type: 3}
   bullet: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
   bulletSpawnPoint: {fileID: 0}
-  weaponFlash: {fileID: 6625499321394082527, guid: 692d9c96521e7ce43b9f4c9be3f6e21a, type: 3}
+  weaponFlash: {fileID: 6625499321394082527, guid: 6278704f099a434c8ee912a65e2bde8a, type: 3}
   droppedWeapon: {fileID: 0}
   recoilDistance: 0
   recoilSpeed: 15
   animatedShotgun: 0
   animatedMagazine: 1
+  hitscan: 1
+  distanceDamageFalloff: 0
+  pelletDamage: 10
+  hitscanRange: 100
+  visibleTracers: 1
+  tracerPrefab: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
+  tracerWidth: 0.035
+  tracerLifetime: 0.075
+  reserveSize: -1
   weaponAnimator: {fileID: 3300320662093000851}
   pelletsPerShot: 1
   spreadDegrees: 1
