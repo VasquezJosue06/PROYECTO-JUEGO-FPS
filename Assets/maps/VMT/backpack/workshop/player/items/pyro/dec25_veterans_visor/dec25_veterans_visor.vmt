@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/dec25_veterans_visor/dec25_veterans_visor"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

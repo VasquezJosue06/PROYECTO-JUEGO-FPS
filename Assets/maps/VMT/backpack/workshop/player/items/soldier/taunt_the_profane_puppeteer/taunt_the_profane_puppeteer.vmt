@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/soldier/taunt_the_profane_puppeteer/taunt_the_profane_puppeteer"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

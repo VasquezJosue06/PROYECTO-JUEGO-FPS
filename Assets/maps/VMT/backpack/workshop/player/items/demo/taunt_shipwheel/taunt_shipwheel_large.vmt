@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/taunt_shipwheel/taunt_shipwheel_large"
+	"$translucent"		"1"
+}

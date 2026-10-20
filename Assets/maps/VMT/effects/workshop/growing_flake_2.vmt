@@ -1,0 +1,19 @@
+"Spritecard"
+{
+	"$basetexture" "effects/workshop/growing_flake_2"
+	"$surfaceprop"	"no_decal"
+	"$additive"	1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	"$translucent"	1
+	"$nocull" 0
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/dec22_lumbercap/dec22_lumbercap"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

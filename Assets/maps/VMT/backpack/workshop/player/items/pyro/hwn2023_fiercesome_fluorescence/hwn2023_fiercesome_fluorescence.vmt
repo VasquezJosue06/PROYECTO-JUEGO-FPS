@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/hwn2023_fiercesome_fluorescence/hwn2023_fiercesome_fluorescence"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

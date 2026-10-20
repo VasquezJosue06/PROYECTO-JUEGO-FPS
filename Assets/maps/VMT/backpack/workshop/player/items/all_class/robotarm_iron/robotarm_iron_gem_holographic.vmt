@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\workshop\player\items\all_class\robotarm_iron\robotarm_iron_gem_holographic"
+	$translucent 1
+	$vertexcolor 1
+}

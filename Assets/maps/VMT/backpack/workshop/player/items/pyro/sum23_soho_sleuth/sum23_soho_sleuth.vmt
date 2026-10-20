@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/sum23_soho_sleuth/sum23_soho_sleuth"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

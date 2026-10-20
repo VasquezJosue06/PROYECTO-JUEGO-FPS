@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/taunt_the_critical_fail/taunt_the_critical_fail_large"
+	"$translucent"		"1"
+}

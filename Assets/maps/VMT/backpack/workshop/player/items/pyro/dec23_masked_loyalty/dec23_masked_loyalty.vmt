@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/dec23_masked_loyalty/dec23_masked_loyalty"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

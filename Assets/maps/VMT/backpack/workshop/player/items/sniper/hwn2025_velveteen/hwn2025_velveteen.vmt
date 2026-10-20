@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/hwn2025_velveteen/hwn2025_velveteen"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

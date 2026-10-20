@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/dec25_flatline_flatcap/dec25_flatline_flatcap"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

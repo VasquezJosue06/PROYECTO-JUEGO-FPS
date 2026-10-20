@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/dec23_rugged_rags/dec23_rugged_rags"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

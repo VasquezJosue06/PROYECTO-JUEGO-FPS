@@ -44,14 +44,25 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rend = GetComponent<Renderer>();
-        originalMaterial = rend.material;
+        rend = GetComponentInChildren<Renderer>();
+        if (rend != null) originalMaterial = rend.material;
 
         agent = GetComponent<NavMeshAgent>();
-        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        if (playerObject != null) playerTransform = playerObject.transform;
 
         GameObject patrolPointParent = GameObject.FindWithTag("PatrolPoint");
-        patrolPoints = patrolPointParent.GetComponentsInChildren<Transform>().Where(t => t != patrolPointParent.transform).ToArray();
+        patrolPoints = patrolPointParent != null
+            ? patrolPointParent.GetComponentsInChildren<Transform>().Where(t => t != patrolPointParent.transform).ToArray()
+            : new Transform[0];
+        if (patrolPoints.Length > 0)
+        {
+            currentPointIndex = Mathf.Clamp(currentPointIndex, 0, patrolPoints.Length - 1);
+            currentTarget = patrolPoints[currentPointIndex].position;
+        }
+        if (agent == null) Debug.LogWarning($"Enemy '{name}' has no NavMeshAgent; AI movement is disabled.", this);
+        if (playerTransform == null) Debug.LogWarning($"Enemy '{name}' could not find an object tagged Player.", this);
+        if (patrolPoints.Length == 0) Debug.LogWarning($"Enemy '{name}' could not find patrol points under an object tagged PatrolPoint.", this);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -84,6 +95,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        if (playerTransform == null) return;
         LookForPlayer();
 
         switch (state)
@@ -102,7 +114,7 @@ public class Enemy : MonoBehaviour
                 break;
         }
 
-        rb.linearVelocity = Vector3.zero;
+        if (rb != null) rb.linearVelocity = Vector3.zero;
 
         LookAtPlayer();
         SetLastKnownPlayerPosition();
@@ -125,7 +137,7 @@ public class Enemy : MonoBehaviour
 
     private void Idle()
     {
-        agent.ResetPath();
+        if (agent != null && agent.isOnNavMesh) agent.ResetPath();
 
         idleTimeCounter -= Time.deltaTime;
 
@@ -137,6 +149,7 @@ public class Enemy : MonoBehaviour
     }
     private void Patrolling()
     {
+        if (patrolPoints == null || patrolPoints.Length == 0 || agent == null || !agent.isOnNavMesh) return;
         if(Vector3.Distance(currentTarget, transform.position) < positionThreshold)
         {
             float chance = Random.Range(0, 100);
@@ -158,7 +171,7 @@ public class Enemy : MonoBehaviour
     private void Attacking()
     {
         idleTimeCounter = idleTime;
-        agent.ResetPath();
+        if (agent != null && agent.isOnNavMesh) agent.ResetPath();
 
         Shoot();
 
@@ -177,6 +190,7 @@ public class Enemy : MonoBehaviour
     private void Chasing()
     {
         idleTimeCounter = idleTime;
+        if (agent == null || !agent.isOnNavMesh) return;
         agent.SetDestination(lastKnownPlayerPosition);
 
         if(health < minChasingHealth)
@@ -214,6 +228,7 @@ public class Enemy : MonoBehaviour
 
     private void Shoot()
     {
+        if (bulletPrefab == null || bulletSpawnPont == null) return;
         if(Time.time > lastShotTime + fireRate)
         {
             Vector3 directionToPlayer = playerTransform.position - transform.position;

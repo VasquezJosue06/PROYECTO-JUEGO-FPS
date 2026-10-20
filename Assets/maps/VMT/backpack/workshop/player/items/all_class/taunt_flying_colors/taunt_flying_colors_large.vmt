@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/taunt_flying_colors/taunt_flying_colors_large"
+	"$translucent"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/taunt_the_homerunners_hobby/taunt_the_homerunners_hobby"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,14 @@
+"Refract"
+{
+ 	"$normalmap" 		"effects/workshop/ocean_swirl/os_center_warp_normal"
+
+ 	"$refractamount" 		"0.0625"
+	"$vertexalpha" 		"1"
+	"$vertexcolor" 		"1"
+	"$translucent" 		"1"
+	"$forcerefract" 		"1"
+ 	"$bluramount" 		"0"
+	"$nofog" 			"1"
+	"$vertexcolormodulate" 	"1"
+	"$nocull" 			"1"
+}

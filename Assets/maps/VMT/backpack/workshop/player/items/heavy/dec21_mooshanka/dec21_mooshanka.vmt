@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/dec21_mooshanka/dec21_mooshanka"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

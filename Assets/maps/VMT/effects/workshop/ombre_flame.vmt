@@ -1,0 +1,13 @@
+"UnlitGeneric"
+{
+	"$basetexture" "effects\workshop\ombre_flame"
+	"$translucent" "1"
+	"$additive" "1"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$overbrightfactor"	"3"
+}
+
+
+
+

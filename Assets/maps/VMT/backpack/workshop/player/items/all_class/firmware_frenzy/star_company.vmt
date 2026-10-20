@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/firmware_frenzy/star_company"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

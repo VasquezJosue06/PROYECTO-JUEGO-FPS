@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/taunt_friendly_fire/taunt_friendly_fire_large"
+	"$translucent"		"1"
+}

@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/osmium_ordinance/osmium_pyrite_large"
+	"$translucent"		"1"
+}

@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "effects/workshop/wheat_floor_hay"	
+	$vertexalpha 1
+	$vertexcolor 1
+	$nocull 0
+	$overbrightfactor 1.0
+}

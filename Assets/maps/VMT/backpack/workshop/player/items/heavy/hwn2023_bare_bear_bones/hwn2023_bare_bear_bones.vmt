@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/hwn2023_bare_bear_bones/hwn2023_bare_bear_bones"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

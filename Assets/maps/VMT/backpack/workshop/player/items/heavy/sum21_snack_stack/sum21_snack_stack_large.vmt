@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/sum21_snack_stack/sum21_snack_stack_large"
+	"$translucent"		"1"
+}

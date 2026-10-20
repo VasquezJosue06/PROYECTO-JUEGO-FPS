@@ -29,7 +29,7 @@ public partial class Gun
             yield return null;
         }
 
-        currentAmmo = maxSize;
+        FillMagazineFromReserve();
         UpdateAmmoUI();
         isReloading = false;
     }

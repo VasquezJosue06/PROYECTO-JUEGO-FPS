@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/taunt_cheers/taunt_cheers"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

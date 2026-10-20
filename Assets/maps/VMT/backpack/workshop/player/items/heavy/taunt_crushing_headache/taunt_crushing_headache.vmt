@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/taunt_crushing_headache/taunt_crushing_headache"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

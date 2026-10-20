@@ -1,0 +1,7 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/workshop/SharkV2"
+	"$blendframes" 0
+	"$depthblend" 1
+	"$additive" 0
+}

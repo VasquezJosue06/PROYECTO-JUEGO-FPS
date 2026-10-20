@@ -129,7 +129,7 @@ MonoBehaviour:
   tracerPrefab: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
   tracerWidth: 0.035
   tracerLifetime: 0.075
-  reserveSize: -1
+  reserveSize: 32
   weaponAnimator: {fileID: 3300320662093000851}
   pelletsPerShot: 10
   spreadDegrees: 4

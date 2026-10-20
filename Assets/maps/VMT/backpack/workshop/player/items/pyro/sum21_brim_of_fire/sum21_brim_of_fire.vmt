@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/sum21_brim_of_fire/sum21_brim_of_fire"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/sum23_medical_emergency/sum23_medical_emergency"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

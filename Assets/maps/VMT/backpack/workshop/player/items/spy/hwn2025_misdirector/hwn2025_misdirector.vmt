@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/hwn2025_misdirector/hwn2025_misdirector"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

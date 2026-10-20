@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/voltaic_violence/vanity"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2024_strikeout/hwn2024_strikeout"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

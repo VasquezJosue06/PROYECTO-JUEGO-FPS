@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$basetexture" "effects/workshop/circle6_glow"
+	"$additive"	1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	"$nocull"		1
+	"$depthblend"	0
+}

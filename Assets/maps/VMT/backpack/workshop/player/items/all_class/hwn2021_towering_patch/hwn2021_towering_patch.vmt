@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/hwn2021_towering_patch/hwn2021_towering_patch"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

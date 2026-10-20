@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/taunt_roasty_toasty/taunt_roasty_toasty"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

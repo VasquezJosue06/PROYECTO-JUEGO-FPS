@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\crafting\strange_filter_fortezza_large"
+	$translucent 1
+}

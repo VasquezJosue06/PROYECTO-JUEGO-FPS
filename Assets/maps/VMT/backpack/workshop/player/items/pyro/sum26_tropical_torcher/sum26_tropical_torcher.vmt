@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/sum26_tropical_torcher/sum26_tropical_torcher"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2021_batters_beak/hwn2021_batters_beak"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

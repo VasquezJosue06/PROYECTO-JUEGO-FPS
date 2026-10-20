@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/sum25_blindin/sum25_blindin_large"
+	"$translucent"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/sum26_bald_spotter/sum26_bald_spotter"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

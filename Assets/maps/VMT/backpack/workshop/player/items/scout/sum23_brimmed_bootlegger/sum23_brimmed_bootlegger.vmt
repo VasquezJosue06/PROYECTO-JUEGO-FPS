@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/sum23_brimmed_bootlegger/sum23_brimmed_bootlegger"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

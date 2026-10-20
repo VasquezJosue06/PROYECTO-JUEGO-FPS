@@ -1,0 +1,7 @@
+"SpriteCard"
+{
+	"$basetexture" "effects\workshop\caustic"
+	"$additive" "1"
+	$overbrightfactor 4
+                $depthblend 0
+}

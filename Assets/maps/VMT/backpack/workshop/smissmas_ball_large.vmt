@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack/workshop/smissmas_ball_large"
+	$translucent 1
+	$vertexcolor 1
+}

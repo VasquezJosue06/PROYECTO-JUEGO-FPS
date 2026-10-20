@@ -1,0 +1,7 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/workshop/seamine/water_ray2"
+	"$blendframes" 1
+	"$depthblend" 0
+	"$additive" 1
+}

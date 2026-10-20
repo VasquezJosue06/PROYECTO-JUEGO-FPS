@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/dec23_covert_covers/dec23_covert_covers"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

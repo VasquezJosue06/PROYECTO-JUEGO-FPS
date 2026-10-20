@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/sum26_deadliest_match/sum26_deadliest_match"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/dec25_willis_warmer/dec25_willis_warmer"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

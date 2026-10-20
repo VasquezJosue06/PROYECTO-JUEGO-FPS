@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/taunt_peace/taunt_peace_large"
+	"$translucent"		"1"
+}

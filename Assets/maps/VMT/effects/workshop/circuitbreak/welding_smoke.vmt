@@ -1,0 +1,9 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/workshop/circuitbreak/welding_smoke"
+	"$blendframes" 	1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	"$translucent"	1
+	"$additive"	1
+}

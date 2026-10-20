@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/dec23_clue_hairdo/dec23_clue_hairdo"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

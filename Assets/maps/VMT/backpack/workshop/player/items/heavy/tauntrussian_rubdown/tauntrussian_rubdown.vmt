@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/tauntrussian_rubdown/tauntrussian_rubdown"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Scout
   m_EditorClassIdentifier: Assembly-CSharp::Classes
   displayName: Scout
-  maxHealth: 125
-  moveSpeed: 10
+  maxHealth: 100
+  moveSpeed: 7.5
   jumpForce: 7.4
   airJumps: 1
   airJumpSpeed: 6.8

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/sum23_glorious_gambeson/sum23_glorious_gambeson"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/hwn2023_concealed_convict/hwn2023_concealed_convict"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

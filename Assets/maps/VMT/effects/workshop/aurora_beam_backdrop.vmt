@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "effects\workshop\aurora_beam_backdrop"
+	$vertexcolor 1
+	$vertexalpha 1
+	$translucent 1
+}

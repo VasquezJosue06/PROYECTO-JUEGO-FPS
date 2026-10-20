@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2025_torn_terror/hwn2025_torn_terror"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

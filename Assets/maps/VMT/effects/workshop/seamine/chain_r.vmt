@@ -1,0 +1,7 @@
+"Sprite"
+{
+	"$basetexture" "effects/workshop/seamine/chain_r"
+	"$translucent" 1
+	"$depthblend" 0
+	"$spriterendermode" 4
+}

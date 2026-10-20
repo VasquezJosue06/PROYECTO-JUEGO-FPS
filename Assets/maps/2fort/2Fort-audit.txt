@@ -1,0 +1,4 @@
+Escena: Assets/maps/2fort/Scenes/2Fort Playable.unity
+Jugadores: 1
+Mesh colliders: 2433
+Puertas: 0

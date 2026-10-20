@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/taunt_the_killer_signature/taunt_the_killer_signature"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

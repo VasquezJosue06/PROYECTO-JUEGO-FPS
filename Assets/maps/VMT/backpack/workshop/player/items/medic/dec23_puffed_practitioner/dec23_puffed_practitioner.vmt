@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/dec23_puffed_practitioner/dec23_puffed_practitioner"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

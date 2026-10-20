@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/taunt_dead_manns_drink/taunt_dead_manns_drink"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

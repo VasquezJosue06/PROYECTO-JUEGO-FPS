@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/taunt_bare_knuckle_beatdown/taunt_bare_knuckle_beatdown"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

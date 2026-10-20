@@ -11,6 +11,8 @@ public class PlayerMove : MonoBehaviour
     public float gravity;
     public float backwardSpeedMultiplier = 1f;
 
+    [Range(0.05f, 0.5f)] public float groundProbeRadius = 0.22f;
+
     public Transform groundchek;
     public float grounddistance = 0.4f;
     public LayerMask groundMask;
@@ -24,6 +26,8 @@ public class PlayerMove : MonoBehaviour
     private bool jumpRequested;
     private PlayerHealth playerHealth;
     private PlayerShoothing shooting;
+    private Vector3 groundNormal = Vector3.up;
+    private float ignoreGroundUntil;
 
     public void ApplyClass(Classes configuration)
     {
@@ -42,6 +46,12 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerHealth = GetComponent<PlayerHealth>();
         shooting = GetComponent<PlayerShoothing>();
+        if (rb != null)
+        {
+            rb.constraints |= RigidbodyConstraints.FreezeRotation;
+            rb.interpolation = RigidbodyInterpolation.Interpolate;
+            rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+        }
     }
 
     void Start()
@@ -86,13 +96,23 @@ public class PlayerMove : MonoBehaviour
         velocity.y = speed;
         rb.linearVelocity = velocity;
         isgrounded = false;
+        ignoreGroundUntil = Time.time + 0.12f;
     }
 
     void CheckGround()
     {
-        // Ignore the ground probe during ascent: it overlaps the floor just after takeoff.
-        isgrounded = groundchek != null && rb.linearVelocity.y <= 0.01f &&
-            Physics.CheckSphere(groundchek.position, grounddistance, groundMask, QueryTriggerInteraction.Ignore);
+        // A sphere overlap against a wall counted as ground and could suspend the player.
+        // Only a downward hit with a walkable normal resets jumps and enables ground control.
+        isgrounded = false;
+        groundNormal = Vector3.up;
+        if (Time.time >= ignoreGroundUntil && groundchek != null &&
+            Physics.SphereCast(groundchek.position + Vector3.up * 0.05f, groundProbeRadius,
+                Vector3.down, out RaycastHit hit, grounddistance + 0.05f, groundMask,
+                QueryTriggerInteraction.Ignore))
+        {
+            isgrounded = hit.normal.y >= 0.55f;
+            if (isgrounded) groundNormal = hit.normal;
+        }
         if (isgrounded) usedAirJumps = 0;
     }
 
@@ -113,14 +133,28 @@ public class PlayerMove : MonoBehaviour
                 direction += transform.forward * (-backwardSpeedMultiplier - backwards);
         }
         float weaponSpeed = shooting != null && shooting.gun != null ? shooting.gun.MovementMultiplier : 1f;
-        rb.linearVelocity = new Vector3(direction.x * movespeed * weaponSpeed, rb.linearVelocity.y, direction.z * movespeed * weaponSpeed);
+        Vector3 desired = direction * movespeed * weaponSpeed;
+        Vector3 velocity = rb.linearVelocity;
+
+        // On a ramp, world-horizontal velocity pushes the capsule into the slope and
+        // loses speed. Project the desired movement onto the walkable surface instead.
+        if (isgrounded)
+        {
+            Vector3 slopeDirection = Vector3.ProjectOnPlane(desired, groundNormal);
+            if (slopeDirection.sqrMagnitude > 0.001f)
+                desired = slopeDirection.normalized * desired.magnitude;
+        }
+
+        float vertical = velocity.y;
+        if (isgrounded && desired.y > 0f) vertical = Mathf.Max(vertical, desired.y);
+        rb.linearVelocity = new Vector3(desired.x, vertical, desired.z);
     }
 
     IEnumerator PlayFootStep()
     {
         while(true)
         {
-            if(rb.linearVelocity.magnitude > 0.1f && isgrounded)
+            if(rb.linearVelocity.magnitude > 0.1f && isgrounded && footStepSFX != null && AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlaySFX(footStepSFX);
             }

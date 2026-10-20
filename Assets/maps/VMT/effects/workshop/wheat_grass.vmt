@@ -1,0 +1,9 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/workshop/wheat_grass"	
+	$vertexalpha 1
+	$vertexcolor 1
+	$nocull 1
+	$overbrightfactor 1.5
+}
+

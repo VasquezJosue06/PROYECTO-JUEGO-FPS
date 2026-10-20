@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/dec24_battle_music/dec24_battle_music"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/dec23_balkans_brute/dec23_balkans_brute"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

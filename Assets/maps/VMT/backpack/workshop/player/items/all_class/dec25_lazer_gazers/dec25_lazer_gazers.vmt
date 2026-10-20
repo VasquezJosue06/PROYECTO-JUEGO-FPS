@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/dec25_lazer_gazers/dec25_lazer_gazers"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

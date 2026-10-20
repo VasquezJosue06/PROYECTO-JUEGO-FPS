@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/dec22_firebrand/dec22_firebrand_large"
+	"$translucent"		"1"
+}

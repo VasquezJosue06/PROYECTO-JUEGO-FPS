@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\workshop\player\items\all_class\robotarm_silver\robotarm_silver_alternate_large"
+	$translucent 1
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/taunt_the_scaredycat/taunt_the_scaredycat"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

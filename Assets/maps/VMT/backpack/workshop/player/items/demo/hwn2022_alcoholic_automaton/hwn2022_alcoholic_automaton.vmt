@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/hwn2022_alcoholic_automaton/hwn2022_alcoholic_automaton"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

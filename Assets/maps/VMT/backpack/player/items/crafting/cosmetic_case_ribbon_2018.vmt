@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\player\items\crafting\cosmetic_case_ribbon_2018"
+	$translucent 1
+	$vertexcolor 1
+}

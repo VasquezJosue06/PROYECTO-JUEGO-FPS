@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/dec24_scrooge_mcdoc/dec24_scrooge_mcdoc"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

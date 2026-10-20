@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/sum25_clinical/sum25_clinical_large"
+	"$translucent"		"1"
+}

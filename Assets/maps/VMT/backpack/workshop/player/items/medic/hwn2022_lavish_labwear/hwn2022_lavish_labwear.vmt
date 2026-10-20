@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/hwn2022_lavish_labwear/hwn2022_lavish_labwear"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

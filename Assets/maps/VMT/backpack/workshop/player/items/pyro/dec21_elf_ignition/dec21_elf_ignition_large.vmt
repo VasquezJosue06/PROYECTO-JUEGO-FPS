@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/dec21_elf_ignition/dec21_elf_ignition_large"
+	"$translucent"		"1"
+}

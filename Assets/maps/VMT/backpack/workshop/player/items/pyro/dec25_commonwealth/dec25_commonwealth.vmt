@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/dec25_commonwealth/dec25_commonwealth"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

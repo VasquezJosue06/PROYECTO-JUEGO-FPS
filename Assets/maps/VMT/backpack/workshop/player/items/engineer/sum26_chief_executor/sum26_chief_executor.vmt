@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/sum26_chief_executor/sum26_chief_executor"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

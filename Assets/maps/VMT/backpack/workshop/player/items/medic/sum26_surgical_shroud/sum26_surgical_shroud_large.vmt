@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/sum26_surgical_shroud/sum26_surgical_shroud_large"
+	"$translucent"		"1"
+}

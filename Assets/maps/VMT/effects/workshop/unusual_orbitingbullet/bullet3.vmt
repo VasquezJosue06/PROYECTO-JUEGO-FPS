@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"effects/workshop/unusual_orbitingbullet/bullet3"
+	"$surfaceprop"	"default"
+	"$translucent"	1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	"$depthblend"	0
+	"$nocull"		1
+}

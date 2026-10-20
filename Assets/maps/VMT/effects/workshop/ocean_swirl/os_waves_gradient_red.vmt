@@ -1,0 +1,7 @@
+"SpriteCard"
+{
+	"$basetexture" 	"effects/workshop/ocean_swirl/os_waves_gradient_red"
+
+	"$additive" 	"1"
+	"$blendframes"	"1"
+}

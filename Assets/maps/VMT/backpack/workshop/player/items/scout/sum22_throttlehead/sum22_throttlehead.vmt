@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/sum22_throttlehead/sum22_throttlehead"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

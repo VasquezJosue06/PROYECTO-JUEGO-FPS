@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/dec23_isotopic_insulator/dec23_isotopic_insulator_large"
+	"$translucent"		"1"
+}

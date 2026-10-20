@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/dec25_epilogue_locks/dec25_epilogue_locks_large"
+	"$translucent"		"1"
+}

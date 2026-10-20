@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/galvanized_gauntlet/bejeweled"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

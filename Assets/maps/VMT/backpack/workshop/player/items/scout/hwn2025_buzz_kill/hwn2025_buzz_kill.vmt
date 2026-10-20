@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2025_buzz_kill/hwn2025_buzz_kill"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

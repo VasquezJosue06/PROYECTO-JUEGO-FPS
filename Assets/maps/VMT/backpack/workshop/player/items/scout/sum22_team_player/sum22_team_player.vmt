@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/sum22_team_player/sum22_team_player"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

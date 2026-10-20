@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/sum24_crooks_cap/sum24_crooks_cap"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

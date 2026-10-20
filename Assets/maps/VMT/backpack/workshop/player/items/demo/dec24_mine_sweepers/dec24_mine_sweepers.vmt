@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/dec24_mine_sweepers/dec24_mine_sweepers"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/hwn2023_spyder/hwn2023_spyder"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

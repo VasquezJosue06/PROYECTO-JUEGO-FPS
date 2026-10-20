@@ -1,0 +1,9 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/workshop/smoke_curls"
+                $additive 1
+	$overbrightfactor 7
+	$depthblend 0 
+	$vertexalpha 1
+	$vertexcolor 1
+}
