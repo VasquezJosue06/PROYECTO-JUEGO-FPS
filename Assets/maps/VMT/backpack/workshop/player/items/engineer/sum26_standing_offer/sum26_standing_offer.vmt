@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/sum26_standing_offer/sum26_standing_offer"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

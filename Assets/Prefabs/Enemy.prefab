@@ -736,24 +736,24 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 991f8f81f0423ef4591d42758c3afe4c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  health: 100
-  bulletPrefab: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
-  bulletSpawnPont: {fileID: 1117702723831930107}
-  weaponFlash: {fileID: 6625499321394082527, guid: 692d9c96521e7ce43b9f4c9be3f6e21a, type: 3}
-  bloom: 0.75
-  fireRate: 0.5
-  hitMat: {fileID: 2100000, guid: a4a8ae469e52b444c9b8461201c79d4b, type: 2}
-  shootingSFX: {fileID: 8300000, guid: d3756f2ffe3ac9346b32f9373cbb1624, type: 3}
-  currentPointIndex: 0
-  currentTarget: {x: 0, y: 0, z: 0}
-  positionThreshold: 2
-  idleTime: 5
-  attackDistance: 5
-  maxViciondistance: 20
-  minChasingHealth: 30
-  patrolPoints: []
-  state: 0
+  m_EditorClassIdentifier: Assembly-CSharp::Enemigo
+  vida: 100
+  prefabricadoProyectil: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
+  puntoGeneracionProyectil: {fileID: 1117702723831930107}
+  fogonazoArma: {fileID: 6625499321394082527, guid: 692d9c96521e7ce43b9f4c9be3f6e21a, type: 3}
+  dispersion: 0.75
+  frecuenciaDisparo: 0.5
+  materialImpacto: {fileID: 2100000, guid: a4a8ae469e52b444c9b8461201c79d4b, type: 2}
+  sonidoDisparo: {fileID: 8300000, guid: d3756f2ffe3ac9346b32f9373cbb1624, type: 3}
+  indicePuntoActual: 0
+  objetivoActual: {x: 0, y: 0, z: 0}
+  distanciaCambioObjetivo: 2
+  tiempoInactivo: 5
+  distanciaAtaque: 5
+  distanciaMaximaVision: 20
+  vidaMinimaPersecucion: 30
+  puntosPatrulla: []
+  estado: 0
 --- !u!195 &777323938402450617
 NavMeshAgent:
   m_ObjectHideFlags: 0

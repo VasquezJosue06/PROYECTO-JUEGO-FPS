@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/sum24_brutes_braces/sum24_brutes_braces"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

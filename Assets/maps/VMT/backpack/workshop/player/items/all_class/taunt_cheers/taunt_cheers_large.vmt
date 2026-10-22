@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/taunt_cheers/taunt_cheers_large"
+	"$translucent"		"1"
+}

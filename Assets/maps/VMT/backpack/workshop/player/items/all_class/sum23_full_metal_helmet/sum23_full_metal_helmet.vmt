@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/sum23_full_metal_helmet/sum23_full_metal_helmet"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

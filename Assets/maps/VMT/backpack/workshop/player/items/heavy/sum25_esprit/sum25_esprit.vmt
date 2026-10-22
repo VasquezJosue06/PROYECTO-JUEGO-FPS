@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/sum25_esprit/sum25_esprit"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

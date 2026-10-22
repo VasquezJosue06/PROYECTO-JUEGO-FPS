@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/sum23_cranium_cooler/sum23_cranium_cooler"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

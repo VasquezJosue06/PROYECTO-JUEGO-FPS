@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/hwn2022_more_gun_marshal/hwn2022_more_gun_marshal"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

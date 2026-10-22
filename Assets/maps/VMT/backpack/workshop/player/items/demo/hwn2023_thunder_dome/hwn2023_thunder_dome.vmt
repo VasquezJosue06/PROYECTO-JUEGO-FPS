@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/hwn2023_thunder_dome/hwn2023_thunder_dome"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

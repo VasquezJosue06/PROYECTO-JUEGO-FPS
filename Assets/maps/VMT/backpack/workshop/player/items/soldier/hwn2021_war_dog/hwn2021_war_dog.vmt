@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/soldier/hwn2021_war_dog/hwn2021_war_dog"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

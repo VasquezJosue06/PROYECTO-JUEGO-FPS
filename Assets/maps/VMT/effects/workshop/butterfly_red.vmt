@@ -1,0 +1,10 @@
+"SpriteCard"
+{
+	"$basetexture"	"effects/workshop/butterfly_red"
+	"$translucent"	0
+	"$blendframes"	"0"
+    	"$alpha" 1
+	"$additive" 0
+
+}
+

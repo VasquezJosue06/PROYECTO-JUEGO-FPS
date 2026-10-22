@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/hwn2022_nightbane_brim/hwn2022_nightbane_brim"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

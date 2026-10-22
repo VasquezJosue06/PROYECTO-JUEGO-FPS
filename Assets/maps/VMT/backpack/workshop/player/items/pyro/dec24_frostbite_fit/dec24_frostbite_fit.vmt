@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/dec24_frostbite_fit/dec24_frostbite_fit"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

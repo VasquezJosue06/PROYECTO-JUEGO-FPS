@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/soldier/sum21_roaming_roman/sum21_roaming_roman"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/jump_fortress_contributor/jump_fortress_contributor_large"
+	"$translucent"		"1"
+}

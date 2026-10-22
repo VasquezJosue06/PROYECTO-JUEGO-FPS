@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/demo/taunt_forehead_slice/taunt_forehead_slice_large"
+	"$translucent"		"1"
+}

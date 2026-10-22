@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/hwn2022_fire_breather/hwn2022_fire_breather"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

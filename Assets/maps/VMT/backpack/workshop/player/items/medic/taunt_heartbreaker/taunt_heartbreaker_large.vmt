@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/taunt_heartbreaker/taunt_heartbreaker_large"
+	"$translucent"		"1"
+}

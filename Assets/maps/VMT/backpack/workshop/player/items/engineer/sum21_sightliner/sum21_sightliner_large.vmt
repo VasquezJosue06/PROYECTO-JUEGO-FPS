@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/sum21_sightliner/sum21_sightliner_large"
+	"$translucent"		"1"
+}

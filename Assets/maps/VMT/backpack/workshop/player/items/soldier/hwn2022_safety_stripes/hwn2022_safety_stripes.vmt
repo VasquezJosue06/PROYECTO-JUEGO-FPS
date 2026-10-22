@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/soldier/hwn2022_safety_stripes/hwn2022_safety_stripes"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/hwn2022_starlight_sorcerer/hwn2022_starlight_sorcerer"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

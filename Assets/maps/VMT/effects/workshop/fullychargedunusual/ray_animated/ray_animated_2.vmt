@@ -1,0 +1,8 @@
+"SpriteCard"
+{
+	"$basetexture" "Effects/workshop/fullychargedunusual/ray_animated/ray_animated_2"
+	"$blendframes" "0"
+	"$depthblend" "0"
+	"$additive" "1"
+    "$overbrightfactor" "3"
+}

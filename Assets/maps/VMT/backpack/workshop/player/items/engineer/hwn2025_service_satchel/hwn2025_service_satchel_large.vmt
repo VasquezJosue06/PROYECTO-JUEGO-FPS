@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/hwn2025_service_satchel/hwn2025_service_satchel_large"
+	"$translucent"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/rewired_rampage/rewired_rampage_ruby"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

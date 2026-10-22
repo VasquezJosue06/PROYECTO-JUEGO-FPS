@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/sum24_aimframe/sum24_aimframe"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

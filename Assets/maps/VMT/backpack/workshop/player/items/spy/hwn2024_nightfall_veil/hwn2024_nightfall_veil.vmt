@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/hwn2024_nightfall_veil/hwn2024_nightfall_veil"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

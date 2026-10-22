@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2022_imps_imprint/hwn2022_imps_imprint"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

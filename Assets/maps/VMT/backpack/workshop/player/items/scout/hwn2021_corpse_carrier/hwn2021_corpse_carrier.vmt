@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2021_corpse_carrier/hwn2021_corpse_carrier"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

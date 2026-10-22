@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/dec24_snug_sharpshooter/dec24_snug_sharpshooter"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

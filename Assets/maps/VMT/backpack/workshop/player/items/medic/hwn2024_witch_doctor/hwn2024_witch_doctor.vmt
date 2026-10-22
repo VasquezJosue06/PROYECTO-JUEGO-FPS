@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/hwn2024_witch_doctor/hwn2024_witch_doctor"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

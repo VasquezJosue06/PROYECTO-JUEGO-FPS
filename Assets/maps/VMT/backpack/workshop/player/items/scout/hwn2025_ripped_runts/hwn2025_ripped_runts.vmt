@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/hwn2025_ripped_runts/hwn2025_ripped_runts"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -220,10 +220,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef55b0cc0f92e144bbbfa2f9a4cb6973, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PickUp
-  highlightMaterial: {fileID: 2100000, guid: 12fc14b654f870b45a16d412d505b0ce, type: 2}
-  weaponPrefab: {fileID: 4965438261709640327, guid: a35b8c32acba1334b9b31dfe8cdbc9be, type: 3}
-  lookRange: 3
+  m_EditorClassIdentifier: Assembly-CSharp::RecogerArma
+  materialResaltado: {fileID: 2100000, guid: 12fc14b654f870b45a16d412d505b0ce, type: 2}
+  prefabricadoArma: {fileID: 4965438261709640327, guid: a35b8c32acba1334b9b31dfe8cdbc9be, type: 3}
+  alcanceMirada: 3
 --- !u!114 &-6848940944619399359
 MonoBehaviour:
   m_ObjectHideFlags: 0

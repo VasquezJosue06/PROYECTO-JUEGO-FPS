@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/sum26_barbeque/sum26_barbeque"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

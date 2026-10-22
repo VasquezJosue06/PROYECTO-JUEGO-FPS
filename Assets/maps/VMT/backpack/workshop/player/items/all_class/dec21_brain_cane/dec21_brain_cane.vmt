@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/dec21_brain_cane/dec21_brain_cane"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

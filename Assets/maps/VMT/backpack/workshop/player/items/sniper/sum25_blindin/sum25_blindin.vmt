@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/sum25_blindin/sum25_blindin"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

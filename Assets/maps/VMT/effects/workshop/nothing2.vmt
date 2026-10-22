@@ -1,0 +1,21 @@
+"Refract"
+{
+	"<dx90"
+	{
+ 		"$normalmap" "effects/workshop/effect_mask_dx80"
+	}
+ 	"$normalmap" "effects/workshop/nothing2"
+ 	"$refractamount" "0"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$translucent" "1"
+	"$forcerefract" 1
+ 	"$bluramount" "0"
+	"$nofog" "1"
+	"$vertexcolormodulate" "1"
+	$NoCull 1
+	$NOVIEWPORTFIXUP        1
+                $depthblend 0
+                $ignorez 0
+	"$no_fullbright" "1"
+}

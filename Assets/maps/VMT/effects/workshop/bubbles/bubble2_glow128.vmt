@@ -1,0 +1,10 @@
+"SpriteCard"
+{
+	"$basetexture" 	"effects/workshop/bubbles/bubble2_glow128"
+	"$translucent"	1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	"$depthblend"	0
+	"$additive"	1
+	"$overbrightfactor" 	1.75
+}

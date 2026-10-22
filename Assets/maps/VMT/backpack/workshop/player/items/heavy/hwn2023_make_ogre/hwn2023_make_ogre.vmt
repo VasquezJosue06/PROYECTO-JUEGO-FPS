@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/hwn2023_make_ogre/hwn2023_make_ogre"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

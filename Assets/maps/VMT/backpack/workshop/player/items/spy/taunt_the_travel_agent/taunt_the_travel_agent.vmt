@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/taunt_the_travel_agent/taunt_the_travel_agent"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

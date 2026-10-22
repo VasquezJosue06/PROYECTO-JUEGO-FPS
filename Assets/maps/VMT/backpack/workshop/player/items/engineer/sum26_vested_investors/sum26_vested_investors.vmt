@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/sum26_vested_investors/sum26_vested_investors"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack/crafting/strange_filter_pelican_peak_large"
+	$translucent 1
+	$vertexcolor 1
+}

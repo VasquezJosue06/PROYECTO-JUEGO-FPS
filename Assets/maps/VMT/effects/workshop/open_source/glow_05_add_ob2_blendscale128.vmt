@@ -1,0 +1,10 @@
+"SpriteCard"
+{
+	"$basetexture" "particle\Particle_Glow_05"
+	"$vertexcolor" "0"
+	"$vertexalpha" "0"
+	"$translucent" "0"
+	"$additive" "1"
+    "$overbrightfactor" "2"
+    "$depthblendscale" "128"
+}

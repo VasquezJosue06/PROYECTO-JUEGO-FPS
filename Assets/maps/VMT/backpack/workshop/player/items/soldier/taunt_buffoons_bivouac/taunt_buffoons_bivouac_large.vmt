@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/soldier/taunt_buffoons_bivouac/taunt_buffoons_bivouac_large"
+	"$translucent"		"1"
+}

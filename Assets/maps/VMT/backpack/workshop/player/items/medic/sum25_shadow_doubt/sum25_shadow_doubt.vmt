@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/sum25_shadow_doubt/sum25_shadow_doubt"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

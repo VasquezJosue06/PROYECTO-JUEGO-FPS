@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/heavy/dec23_bigger_mann/dec23_bigger_mann"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

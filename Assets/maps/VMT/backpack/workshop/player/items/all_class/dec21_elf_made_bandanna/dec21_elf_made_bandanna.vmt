@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/dec21_elf_made_bandanna/dec21_elf_made_bandanna"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

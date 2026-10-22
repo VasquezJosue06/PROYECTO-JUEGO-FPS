@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/dec25_alpine_hawk/dec25_alpine_hawk_large"
+	"$translucent"		"1"
+}

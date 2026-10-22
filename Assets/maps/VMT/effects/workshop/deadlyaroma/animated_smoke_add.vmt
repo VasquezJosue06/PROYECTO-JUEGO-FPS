@@ -1,0 +1,8 @@
+"SpriteCard"
+{
+	"$basetexture" "Effects/workshop/deadlyaroma/animated_smoke_add"
+	"$blendframes" 1
+	"$depthblend" 1
+	"$additive" 1
+                "$overbrightfactor" 3
+}

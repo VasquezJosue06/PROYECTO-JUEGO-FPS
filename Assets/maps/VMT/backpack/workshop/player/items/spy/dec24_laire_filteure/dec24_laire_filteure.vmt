@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/dec24_laire_filteure/dec24_laire_filteure"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

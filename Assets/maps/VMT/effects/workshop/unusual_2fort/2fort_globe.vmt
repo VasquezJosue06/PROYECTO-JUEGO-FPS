@@ -1,0 +1,9 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/workshop/unusual_2fort/2fort_globe"
+	"$translucent"	1
+	"$blendframes"	1
+	"$vertexalpha"	1
+	"$vertexcolor"	1
+$depthblend 0
+}

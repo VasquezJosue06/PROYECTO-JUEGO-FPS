@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/medic/hwn2023_medical_mummy/hwn2023_medical_mummy"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

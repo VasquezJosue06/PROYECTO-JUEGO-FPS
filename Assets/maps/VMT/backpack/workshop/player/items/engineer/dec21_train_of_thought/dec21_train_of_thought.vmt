@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/dec21_train_of_thought/dec21_train_of_thought"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,17 @@
+"Refract"
+{
+	"<dx90"
+	{
+ 		"$fallbackmaterial" "Effects/workshop/open_source/effect_mask_dx80"
+	}
+ 	"$normalmap" "Effects/workshop/open_source/effect_mask"
+ 	"$refractamount" "0"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$translucent" "1"
+ 	"$bluramount" "0"
+	"$nofog" "1"
+	"$vertexcolormodulate" "1"
+    "$DEPTHBLEND" "0"
+    "$ignorez" "0"
+}

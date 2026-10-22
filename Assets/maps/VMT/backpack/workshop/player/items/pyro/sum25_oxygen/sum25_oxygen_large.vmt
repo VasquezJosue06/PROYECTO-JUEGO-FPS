@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/sum25_oxygen/sum25_oxygen_large"
+	"$translucent"		"1"
+}

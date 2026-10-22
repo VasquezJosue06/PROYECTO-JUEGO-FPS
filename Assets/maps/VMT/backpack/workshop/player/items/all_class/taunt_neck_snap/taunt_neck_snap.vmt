@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/taunt_neck_snap/taunt_neck_snap"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

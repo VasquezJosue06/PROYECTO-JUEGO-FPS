@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "Effects/circle4_gradient"
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	$DEPTHBLEND "0"   
+	$additive 1
+	$overbrightfactor 1.5
+}

@@ -1,0 +1,16 @@
+"Refract"
+{
+	"<dx90"
+	{
+ 		"$normalmap" "effects/workshop/signalinterference/warp3"
+	}
+ 	"$normalmap" "effects/workshop/signalinterference/warp3"
+ 	"$refractamount" "0.025"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$translucent" "1"
+	"$forcerefract" 1
+ 	"$bluramount" "0"
+	"$nofog" "1"
+	"$vertexcolormodulate" "1"
+}

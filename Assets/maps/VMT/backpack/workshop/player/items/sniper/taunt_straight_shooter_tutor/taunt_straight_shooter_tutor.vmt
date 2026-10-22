@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/taunt_straight_shooter_tutor/taunt_straight_shooter_tutor"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

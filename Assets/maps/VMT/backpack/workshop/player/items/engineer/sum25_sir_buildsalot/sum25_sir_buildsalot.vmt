@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/engineer/sum25_sir_buildsalot/sum25_sir_buildsalot"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

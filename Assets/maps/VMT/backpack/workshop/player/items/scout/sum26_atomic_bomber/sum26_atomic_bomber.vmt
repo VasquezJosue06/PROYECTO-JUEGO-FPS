@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/scout/sum26_atomic_bomber/sum26_atomic_bomber"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

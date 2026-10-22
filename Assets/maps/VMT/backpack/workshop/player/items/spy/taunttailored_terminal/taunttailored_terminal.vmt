@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/taunttailored_terminal/taunttailored_terminal"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

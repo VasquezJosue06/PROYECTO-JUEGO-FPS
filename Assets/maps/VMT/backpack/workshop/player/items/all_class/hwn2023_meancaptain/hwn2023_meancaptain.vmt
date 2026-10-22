@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/hwn2023_meancaptain/hwn2023_meancaptain"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

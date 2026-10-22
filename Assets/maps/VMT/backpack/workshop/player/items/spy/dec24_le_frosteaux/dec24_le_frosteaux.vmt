@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/dec24_le_frosteaux/dec24_le_frosteaux"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

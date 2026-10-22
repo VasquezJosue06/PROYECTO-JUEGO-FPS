@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/pyro/sum26_pyros_overalls/sum26_pyros_overalls"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

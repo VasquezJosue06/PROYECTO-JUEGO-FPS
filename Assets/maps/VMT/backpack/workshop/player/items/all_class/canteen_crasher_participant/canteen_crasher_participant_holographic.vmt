@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack\workshop\player\items\all_class\canteen_crasher_participant\canteen_crasher_participant_holographic"
+	$translucent 1
+	$vertexcolor 1
+}

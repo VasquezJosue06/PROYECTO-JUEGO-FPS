@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/all_class/peculiar_pandemonium/lepidolite"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

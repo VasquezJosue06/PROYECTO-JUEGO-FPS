@@ -1,0 +1,17 @@
+"Spritecard"
+{
+	"srgb?$overbrightfactor" "1"
+	"$basetexture" "Effects/workshop/utaunt_voidcrawlers/voidsmoke"
+	"$translucent" "1"
+	"$vertexcolor"		"1"
+	"$vertexalpha"		"1"
+	"$DEPTHBLEND" "0"
+	"$startfadesize" ".3"
+	"$endfadesize" ".5"
+	"$maxsize" ".4"
+	<dx90
+	{   
+		// help fill rate on low end
+		"$maxsize" ".15"
+	}
+}

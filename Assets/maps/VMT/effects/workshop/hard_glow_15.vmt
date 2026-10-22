@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture" "effects/workshop/hard_glow_15"
+	"$blendframes" 0
+	"$depthblend" 1
+	"$additive" 1
+	"$vertexcolor"	1
+	"$vertexalpha"	1
+	
+}

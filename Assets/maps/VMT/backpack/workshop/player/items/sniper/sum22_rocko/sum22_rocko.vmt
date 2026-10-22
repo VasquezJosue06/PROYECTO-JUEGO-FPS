@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/sniper/sum22_rocko/sum22_rocko"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

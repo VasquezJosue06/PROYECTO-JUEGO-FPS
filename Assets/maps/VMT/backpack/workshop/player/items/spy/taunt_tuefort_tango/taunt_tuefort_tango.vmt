@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/workshop/player/items/spy/taunt_tuefort_tango/taunt_tuefort_tango"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}
