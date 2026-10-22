@@ -331,19 +331,19 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee07d8fa3bbcf7c419629a00ffbcccf0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  movespeed: 5
-  jumpforce: 5
-  airJumps: 0
-  airJumpSpeed: 5
-  gravity: 0
-  backwardSpeedMultiplier: 1
-  groundchek: {fileID: 5120916031675063836}
-  grounddistance: 0.4
-  groundMask:
+  m_EditorClassIdentifier: Assembly-CSharp::MovimientoJugador
+  velocidadMovimiento: 5
+  fuerzaSalto: 5
+  saltosAereos: 0
+  velocidadSaltoAereo: 5
+  gravedad: 0
+  multiplicadorVelocidadAtras: 1
+  puntoChequeoSuelo: {fileID: 5120916031675063836}
+  distanciaSuelo: 0.4
+  mascaraSuelo:
     serializedVersion: 2
     m_Bits: 64
-  footStepSFX: {fileID: 8300000, guid: 8e02e739c1ec6744ea932df5ff5b73ef, type: 3}
+  sonidoPasos: {fileID: 8300000, guid: 8e02e739c1ec6744ea932df5ff5b73ef, type: 3}
 --- !u!114 &1194992647180558048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,9 +355,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c13988c37885f04788c470737101ea7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerLoock
-  MouseSensitivity: 0.12
-  cam: {fileID: 1248486062010489687}
+  m_EditorClassIdentifier: Assembly-CSharp::MiradaJugador
+  SensibilidadRaton: 0.12
+  camara: {fileID: 1248486062010489687}
 --- !u!114 &459031174260665272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,11 +369,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fcaafbee53d8b948abcbf62f5dc9c4d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoothing
-  gun: {fileID: 0}
-  gunHolder: {fileID: 6671460527252020604}
-  startingWeapon: {fileID: 0}
-  secondaryWeapon: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::DisparoJugador
+  armaActual: {fileID: 0}
+  soporteArma: {fileID: 6671460527252020604}
+  armaInicial: {fileID: 0}
+  armaSecundaria: {fileID: 0}
 --- !u!114 &8734364482960601696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,9 +385,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9ef13f992edd3948bb556f16ce32706, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  health: 100
-  hitSFX: {fileID: 8300000, guid: 9fe210d0ec2e38a47b3e1ec54e6d6954, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::VidaJugador
+  vida: 100
+  sonidoImpacto: {fileID: 8300000, guid: 9fe210d0ec2e38a47b3e1ec54e6d6954, type: 3}
 --- !u!114 &718894416976089797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,8 +399,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b74f2dcafe4f4bc1a4599b241387b90d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerClass
-  selectedClass: {fileID: 11400000, guid: c0ba62366c0d44bd98e08a3a59e7ba42, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::ClaseJugador
+  claseSeleccionada: {fileID: 11400000, guid: c0ba62366c0d44bd98e08a3a59e7ba42, type: 2}
 --- !u!114 &2212637221071378640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,9 +412,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7dea8885b6eb89e4ab01b2c032c26323, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TF2MapRespawn
-  spawn: {fileID: 0}
-  minimumHeight: -25.66801
+  m_EditorClassIdentifier: Assembly-CSharp::ReaparicionMapaTF2
+  puntoReaparicion: {fileID: 0}
+  alturaMinima: -25.66801
 --- !u!1 &4707097079036371350
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ccb552438e64821842ab939e3a29e9a, type: 3}
   m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::TF2ExplorationClasses
-  scout: {fileID: 11400000, guid: c0ba62366c0d44bd98e08a3a59e7ba42, type: 2}
-  heavy: {fileID: 11400000, guid: 1b81ef7ff99116a49ba7e7807f8b4f8b, type: 2}
-  showControls: 1
+  m_EditorClassIdentifier: Assembly-CSharp::ClasesExploracionTF2
+  claseScout: {fileID: 11400000, guid: c0ba62366c0d44bd98e08a3a59e7ba42, type: 2}
+  claseHeavy: {fileID: 11400000, guid: 1b81ef7ff99116a49ba7e7807f8b4f8b, type: 2}
+  mostrarControles: 1

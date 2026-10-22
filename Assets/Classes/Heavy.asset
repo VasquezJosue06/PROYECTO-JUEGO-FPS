@@ -11,15 +11,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 225b13405acf49cfb4440c5dfb72ee16, type: 3}
   m_Name: Heavy
-  m_EditorClassIdentifier: Assembly-CSharp::Classes
-  displayName: Heavy
-  maxHealth: 300
-  moveSpeed: 5.75
-  jumpForce: 7.4
-  airJumps: 0
-  airJumpSpeed: 0
-  gravity: 20.3
-  backwardSpeedMultiplier: 0.9
-  primaryWeapon: {fileID: 1941985452372136096, guid: e0b7acd37b6dc354bab8099d2180a4b3, type: 3}
-  secondaryWeapon: {fileID: 7980589431832702854, guid: f3869a35560229f4aa3f10ab70701bd0, type: 3}
-  additionalWeapons: []
+  m_EditorClassIdentifier: Assembly-CSharp::ClasesJugador
+  nombreVisible: Heavy
+  vidaMaxima: 300
+  velocidadMovimiento: 5.75
+  fuerzaSalto: 7.4
+  saltosAereos: 0
+  velocidadSaltoAereo: 0
+  gravedad: 20.3
+  multiplicadorVelocidadAtras: 0.9
+  armaPrincipal: {fileID: 1941985452372136096, guid: e0b7acd37b6dc354bab8099d2180a4b3, type: 3}
+  armaSecundaria: {fileID: 7980589431832702854, guid: f3869a35560229f4aa3f10ab70701bd0, type: 3}
+  armasAdicionales: []

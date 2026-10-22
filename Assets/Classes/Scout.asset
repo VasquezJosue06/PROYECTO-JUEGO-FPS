@@ -11,15 +11,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 225b13405acf49cfb4440c5dfb72ee16, type: 3}
   m_Name: Scout
-  m_EditorClassIdentifier: Assembly-CSharp::Classes
-  displayName: Scout
-  maxHealth: 100
-  moveSpeed: 7.5
-  jumpForce: 7.4
-  airJumps: 1
-  airJumpSpeed: 6.8
-  gravity: 20.3
-  backwardSpeedMultiplier: 0.9
-  primaryWeapon: {fileID: 721620420001, guid: fa562c104949fcc4f8d8721b2f4d2038, type: 3}
-  secondaryWeapon: {fileID: 721620420001, guid: f63bcf46fa93436a9e81151d94e4dd3a, type: 3}
-  additionalWeapons: []
+  m_EditorClassIdentifier: Assembly-CSharp::ClasesJugador
+  nombreVisible: Scout
+  vidaMaxima: 100
+  velocidadMovimiento: 7.5
+  fuerzaSalto: 7.4
+  saltosAereos: 1
+  velocidadSaltoAereo: 6.8
+  gravedad: 20.3
+  multiplicadorVelocidadAtras: 0.9
+  armaPrincipal: {fileID: 721620420001, guid: fa562c104949fcc4f8d8721b2f4d2038, type: 3}
+  armaSecundaria: {fileID: 721620420001, guid: f63bcf46fa93436a9e81151d94e4dd3a, type: 3}
+  armasAdicionales: []

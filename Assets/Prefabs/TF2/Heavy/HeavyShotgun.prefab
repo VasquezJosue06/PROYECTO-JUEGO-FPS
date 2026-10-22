@@ -102,39 +102,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec495975d73f2f45a6330c39ef188e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reloadTime: 1
-  fireRate: 0.625
-  maxSize: 6
-  shootingSFX: {fileID: 8300000, guid: 0b78c9ea2f1466b44a1dbad85c0e822e, type: 3}
-  bullet: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
-  bulletSpawnPoint: {fileID: 6641003175632001878}
-  weaponFlash: {fileID: 6625499321394082527, guid: 6278704f099a434c8ee912a65e2bde8a, type: 3}
-  droppedWeapon: {fileID: 0}
-  recoilDistance: 0
-  recoilSpeed: 15
-  animatedShotgun: 1
-  animatedMagazine: 0
-  animatedMinigun: 0
-  spunMoveMultiplier: 0.47826087
-  reserveSize: 32
-  hitscan: 1
-  visibleTracers: 1
-  tracerPrefab: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
-  tracerWidth: 0.035
-  tracerLifetime: 0.075
-  barrelDegreesPerSecond: 1440
-  barrelSpinUpTime: 0.87
-  barrelSpinDownTime: 0.6
-  fireAnimationDuration: 0.625
-  pelletDamage: 6
-  hitscanRange: 100
-  weaponAnimator: {fileID: 7737192238905603238}
-  pelletsPerShot: 10
-  spreadDegrees: 4
-  equippedPosition: {x: 0, y: 0, z: 0}
-  equippedEulerAngles: {x: 0, y: 90, z: 0}
-  separateViewmodelCamera: 1
-  viewmodelFieldOfView: 50
+  tiempoRecarga: 1
+  frecuenciaDisparo: 0.625
+  capacidadMaxima: 6
+  sonidoDisparo: {fileID: 8300000, guid: 0b78c9ea2f1466b44a1dbad85c0e822e, type: 3}
+  proyectil: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
+  puntoGeneracionProyectil: {fileID: 6641003175632001878}
+  fogonazoArma: {fileID: 6625499321394082527, guid: 6278704f099a434c8ee912a65e2bde8a, type: 3}
+  armaSoltada: {fileID: 0}
+  distanciaRetroceso: 0
+  velocidadRetroceso: 15
+  escopetaAnimada: 1
+  cargadorAnimado: 0
+  minigunAnimada: 0
+  multiplicadorMovimientoGirando: 0.47826087
+  capacidadReserva: 32
+  impactoInstantaneo: 1
+  trazadorasVisibles: 1
+  prefabricadoTrazadora: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
+  anchoTrazadora: 0.035
+  duracionTrazadora: 0.075
+  gradosTamborPorSegundo: 1440
+  tiempoAceleracionTambor: 0.87
+  tiempoFrenadoTambor: 0.6
+  duracionAnimacionDisparo: 0.625
+  danioPerdigon: 6
+  alcanceImpactoInstantaneo: 100
+  animadorArma: {fileID: 7737192238905603238}
+  perdigonesPorDisparo: 10
+  gradosDispersion: 4
+  posicionEquipada: {x: 0, y: 0, z: 0}
+  angulosEulerEquipada: {x: 0, y: 90, z: 0}
+  camaraArmaSeparada: 1
+  campoVisionArma: 50
 --- !u!4 &6641003175632001878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9214387191625991978, guid: 8cbae5f3dde8282479acca4a4a513b35, type: 3}

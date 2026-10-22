@@ -422,7 +422,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd034aafc9c7f7f4e891123706695e88, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  m_EditorClassIdentifier: Assembly-CSharp::GestorAudio
 --- !u!4 &321183283
 Transform:
   m_ObjectHideFlags: 0
@@ -1681,8 +1681,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1536644819}
-        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
-        m_MethodName: Restart
+        m_TargetAssemblyTypeName: GestorInterfaz, Assembly-CSharp
+        m_MethodName: Reiniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3150,19 +3150,19 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee07d8fa3bbcf7c419629a00ffbcccf0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
-  movespeed: 5
-  jumpforce: 5
-  airJumps: 0
-  airJumpSpeed: 5
-  gravity: 0
-  backwardSpeedMultiplier: 1
-  groundchek: {fileID: 1227730518}
-  grounddistance: 0.4
-  groundMask:
+  m_EditorClassIdentifier: Assembly-CSharp::MovimientoJugador
+  velocidadMovimiento: 5
+  fuerzaSalto: 5
+  saltosAereos: 0
+  velocidadSaltoAereo: 5
+  gravedad: 0
+  multiplicadorVelocidadAtras: 1
+  puntoChequeoSuelo: {fileID: 1227730518}
+  distanciaSuelo: 0.4
+  mascaraSuelo:
     serializedVersion: 2
     m_Bits: 64
-  footStepSFX: {fileID: 8300000, guid: 8e02e739c1ec6744ea932df5ff5b73ef, type: 3}
+  sonidoPasos: {fileID: 8300000, guid: 8e02e739c1ec6744ea932df5ff5b73ef, type: 3}
 --- !u!114 &1222556867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3204,9 +3204,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c13988c37885f04788c470737101ea7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerLoock
-  MouseSensitivity: 0.12
-  cam: {fileID: 330585546}
+  m_EditorClassIdentifier: Assembly-CSharp::MiradaJugador
+  SensibilidadRaton: 0.12
+  camara: {fileID: 330585546}
 --- !u!114 &1222556869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3218,9 +3218,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fcaafbee53d8b948abcbf62f5dc9c4d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoothing
-  gun: {fileID: 0}
-  gunHolder: {fileID: 1815358680}
+  m_EditorClassIdentifier: Assembly-CSharp::DisparoJugador
+  armaActual: {fileID: 0}
+  soporteArma: {fileID: 1815358680}
 --- !u!114 &1222556871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,8 +3232,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b74f2dcafe4f4bc1a4599b241387b90d, type: 3}
   m_Name:
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerClass
-  selectedClass: {fileID: 11400000, guid: c0ba62366c0d44bd98e08a3a59e7ba42, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::ClaseJugador
+  claseSeleccionada: {fileID: 11400000, guid: c0ba62366c0d44bd98e08a3a59e7ba42, type: 2}
 --- !u!114 &1222556870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3245,9 +3245,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9ef13f992edd3948bb556f16ce32706, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  health: 100
-  hitSFX: {fileID: 8300000, guid: 9fe210d0ec2e38a47b3e1ec54e6d6954, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::VidaJugador
+  vida: 100
+  sonidoImpacto: {fileID: 8300000, guid: 9fe210d0ec2e38a47b3e1ec54e6d6954, type: 3}
 --- !u!1 &1227730517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,12 +3724,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19261b51c6553344fa71b9dae73be7ab, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UiManager
-  hitUi: {fileID: 4593860919553333394, guid: f0ca81ec51638e8469c9ea904bdb7714, type: 3}
-  deathUi: {fileID: 2004416957}
-  ammoText: {fileID: 845060930}
-  healthBar: {fileID: 1421104403}
-  healthGradiant:
+  m_EditorClassIdentifier: Assembly-CSharp::GestorInterfaz
+  interfazImpacto: {fileID: 4593860919553333394, guid: f0ca81ec51638e8469c9ea904bdb7714, type: 3}
+  interfazMuerte: {fileID: 2004416957}
+  textoMunicion: {fileID: 845060930}
+  barraVida: {fileID: 1421104403}
+  gradienteVida:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
     key1: {r: 1, g: 0.88914996, b: 0, a: 1}

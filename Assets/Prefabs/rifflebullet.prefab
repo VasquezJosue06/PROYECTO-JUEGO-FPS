@@ -138,9 +138,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eba782b0894dc774fb621e263d1dc246, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  speed: 15
-  lifeTime: 3
+  m_EditorClassIdentifier: Assembly-CSharp::Proyectil
+  velocidad: 15
+  duracion: 3
 --- !u!65 &3084941112605449966
 BoxCollider:
   m_ObjectHideFlags: 0

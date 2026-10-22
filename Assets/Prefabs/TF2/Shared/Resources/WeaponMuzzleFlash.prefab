@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3e624e73ffe452fa5d157d91023e7de, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponMuzzleFlash
+  m_EditorClassIdentifier: Assembly-CSharp::FogonazoArma
   material: {fileID: 2100000, guid: a2f85e02c6d54814b29db5a5dc0a1a73, type: 2}
-  size: 0.3
-  duration: 0.1
+  tamano: 0.3
+  duracion: 0.1

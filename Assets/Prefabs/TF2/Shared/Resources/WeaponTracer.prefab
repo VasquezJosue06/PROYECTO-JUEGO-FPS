@@ -43,8 +43,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78a82e5768ce4dec89db4b5c6d48c7c8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponTracerVisual
+  m_EditorClassIdentifier: Assembly-CSharp::VisualTrazadoraArma
   material: {fileID: 2100000, guid: fa3e455950794732bde91aa5eb3858a4, type: 2}
   color: {r: 1, g: 0.72, b: 0.25, a: 1}
-  travelSpeed: 160
-  tailLength: 1.5
+  velocidadRecorrido: 160
+  longitudCola: 1.5

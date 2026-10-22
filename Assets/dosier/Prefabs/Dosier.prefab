@@ -46,13 +46,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2c687eaf7bc4a0f86a352c4563c6cc8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DosierPickup
-  spinController: {fileID: 9100000, guid: d922dca9585a18f41b890e6171ff2a5e, type: 2}
-  hudIcon: {fileID: 0}
-  pickupMessage: Dosier recogido
-  messageDuration: 4
-  pickupRadius: 1.5
-  carriedLocalPosition: {x: 0, y: 0.85, z: 0.65}
+  m_EditorClassIdentifier: Assembly-CSharp::DosierRecogida
+  controladorGiro: {fileID: 9100000, guid: d922dca9585a18f41b890e6171ff2a5e, type: 2}
+  iconoInterfaz: {fileID: 0}
+  mensajeRecogida: Dosier recogido
+  duracionMensaje: 4
+  radioRecogida: 1.5
+  posicionLocalTransportada: {x: 0, y: 0.85, z: 0.65}
 --- !u!65 &65000000
 BoxCollider:
   m_ObjectHideFlags: 0

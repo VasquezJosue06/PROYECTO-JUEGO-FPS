@@ -102,31 +102,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec495975d73f2f45a6330c39ef188e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reloadTime: 1
-  fireRate: 0.15
-  maxSize: 12
-  shootingSFX: {fileID: 8300000, guid: 0b78c9ea2f1466b44a1dbad85c0e822e, type: 3}
-  bullet: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
-  bulletSpawnPoint: {fileID: 0}
-  weaponFlash: {fileID: 6625499321394082527, guid: 6278704f099a434c8ee912a65e2bde8a, type: 3}
-  droppedWeapon: {fileID: 0}
-  recoilDistance: 0
-  recoilSpeed: 15
-  animatedShotgun: 0
-  animatedMagazine: 1
-  hitscan: 1
-  distanceDamageFalloff: 0
-  pelletDamage: 10
-  hitscanRange: 100
-  visibleTracers: 1
-  tracerPrefab: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
-  tracerWidth: 0.035
-  tracerLifetime: 0.075
-  reserveSize: 36
-  weaponAnimator: {fileID: 3300320662093000851}
-  pelletsPerShot: 1
-  spreadDegrees: 1
-  equippedPosition: {x: 0, y: 0, z: 0}
-  equippedEulerAngles: {x: 0, y: 90, z: 0}
-  separateViewmodelCamera: 1
-  viewmodelFieldOfView: 50
+  tiempoRecarga: 1
+  frecuenciaDisparo: 0.15
+  capacidadMaxima: 12
+  sonidoDisparo: {fileID: 8300000, guid: 0b78c9ea2f1466b44a1dbad85c0e822e, type: 3}
+  proyectil: {fileID: 5341742223406746680, guid: 9c3cddd6060b7cc4eadfb9cefcf6e7db, type: 3}
+  puntoGeneracionProyectil: {fileID: 0}
+  fogonazoArma: {fileID: 6625499321394082527, guid: 6278704f099a434c8ee912a65e2bde8a, type: 3}
+  armaSoltada: {fileID: 0}
+  distanciaRetroceso: 0
+  velocidadRetroceso: 15
+  escopetaAnimada: 0
+  cargadorAnimado: 1
+  impactoInstantaneo: 1
+  caidaDanioDistancia: 0
+  danioPerdigon: 10
+  alcanceImpactoInstantaneo: 100
+  trazadorasVisibles: 1
+  prefabricadoTrazadora: {fileID: 100000, guid: 5c51d19670914a85ae482c8714d3bfc9, type: 3}
+  anchoTrazadora: 0.035
+  duracionTrazadora: 0.075
+  capacidadReserva: 36
+  animadorArma: {fileID: 3300320662093000851}
+  perdigonesPorDisparo: 1
+  gradosDispersion: 1
+  posicionEquipada: {x: 0, y: 0, z: 0}
+  angulosEulerEquipada: {x: 0, y: 90, z: 0}
+  camaraArmaSeparada: 1
+  campoVisionArma: 50
