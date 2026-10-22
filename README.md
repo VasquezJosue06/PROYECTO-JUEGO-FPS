@@ -30,5 +30,3 @@
 2. Abre en Unity Hub la carpeta raíz que contiene `Assets`, `Packages` y `ProjectSettings`. Espera a que Unity importe los recursos y resuelva los paquetes.
 3. En Unity abre **File > Build Profiles** (o **File > Build Settings**, según la interfaz), selecciona **Windows**, confirma que las escenas de arriba estén habilitadas y elige **Build**.
 4. Guarda el resultado en `Ejecutable/`. Ejecuta el `.exe` generado desde esa carpeta; conserva junto a él la carpeta de datos y cualquier archivo asociado que Unity produzca.
-
-El proyecto fija la versión **6000.3.22f1** y las tres escenas anteriores en Build Settings. En este equipo está el editor Unity, pero no se encontró una carpeta instalada de `WindowsStandaloneSupport`; por ello no se pudo verificar ni generar aquí una compilación Windows.
